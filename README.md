@@ -10,22 +10,21 @@ This repository is organized based on a **Systematic Literature Review (2014-202
 
 ## 📖 Table of Contents
 
-- [Master Literature Index (S1-S87)](https://www.notion.so/30541cf8b15a8076b866f14fd48316cd?pvs=21)
-- [Software Security](https://www.notion.so/30541cf8b15a8076b866f14fd48316cd?pvs=21)
-    - [Vulnerability & Attack Analysis](https://www.notion.so/30541cf8b15a8076b866f14fd48316cd?pvs=21)
-    - [Offensive Tools & Reconnaissance](https://www.notion.so/30541cf8b15a8076b866f14fd48316cd?pvs=21)
-    - [Hardening: Application Layer](https://www.notion.so/30541cf8b15a8076b866f14fd48316cd?pvs=21)
-    - [Hardening: Communication Layer](https://www.notion.so/30541cf8b15a8076b866f14fd48316cd?pvs=21)
-    - [Runtime Monitoring & IDS](https://www.notion.so/30541cf8b15a8076b866f14fd48316cd?pvs=21)
-- [Software Reliability](https://www.notion.so/30541cf8b15a8076b866f14fd48316cd?pvs=21)
-    - [Fault Studies & Dependencies](https://www.notion.so/30541cf8b15a8076b866f14fd48316cd?pvs=21)
-    - [Static Analysis](https://www.notion.so/30541cf8b15a8076b866f14fd48316cd?pvs=21)
-    - [Dynamic Analysis (Fuzzing)](https://www.notion.so/30541cf8b15a8076b866f14fd48316cd?pvs=21)
-    - [Formal Verification](https://www.notion.so/30541cf8b15a8076b866f14fd48316cd?pvs=21)
-    - [Semantic & Self-Adaptive Faults](https://www.notion.so/30541cf8b15a8076b866f14fd48316cd?pvs=21)
-- [Contributing](https://www.notion.so/30541cf8b15a8076b866f14fd48316cd?pvs=21)
-- [License](https://www.notion.so/30541cf8b15a8076b866f14fd48316cd?pvs=21)
-
+- [Master Literature Index (S1-S87)](#-master-literature-index)
+- [Software Security](#-software-security)
+  - [Vulnerability & Attack Analysis](#vulnerability--attack-analysis)
+  - [Offensive Tools & Reconnaissance](#offensive-tools--reconnaissance)
+  - [Hardening: Application Layer](#hardening-application-layer)
+  - [Hardening: Communication Layer](#hardening-communication-layer)
+  - [Runtime Monitoring & IDS](#runtime-monitoring--intrusion-detection)
+- [Software Reliability](#-software-reliability)
+  - [Fault Studies & Dependencies](#fault-studies--dependencies)
+  - [Static Analysis](#static-analysis)
+  - [Dynamic Analysis (Fuzzing)](#dynamic-analysis-fuzzing)
+  - [Formal Verification](#formal-verification)
+  - [Semantic & Self-Adaptive Faults](#semantic--self-adaptive-faults)
+- [Contributing](#-contributing)
+- [License](#-license)
 ---
 
 ## 📚 Master Literature Index
