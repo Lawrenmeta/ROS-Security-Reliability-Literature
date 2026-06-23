@@ -1,6 +1,6 @@
 # Replication Package
 
-This repository provides the replication data for the article:
+This repository contains the data and supporting materials for the article:
 
 **Security and Reliability in the Robot Operating System: A Systematic Review from a Software Defects Perspective**
 
@@ -9,73 +9,78 @@ This repository provides the replication data for the article:
 ```text
 data/
   excel/
-    review_defect_statistics.xlsx
     study_coding_workbook.xlsx
+    review_defect_statistics.xlsx
   csv/
-    review_defect_statistics/
     study_coding_workbook/
+    review_defect_statistics/
 scripts/
   export_excel_to_csv.py
 ```
 
-## Excel Workbooks
+## Primary Replication Data
 
-| File | Purpose |
-| --- | --- |
-| `data/excel/review_defect_statistics.xlsx` | Statistics workbook summarizing defect counts, tool support, ROS-version coverage, source-code requirements, simulation use, and low-support defect categories. |
-| `data/excel/study_coding_workbook.xlsx` | Main study-coding workbook.
+The primary replication data are provided in `data/csv/study_coding_workbook/`. These files contain the study-level coding results, defect evidence, coding framework, coding rules, inter-rater audit records, and agreement calculations used in the review.
 
-## CSV Files Exported From `review_defect_statistics.xlsx`
+| File                       | Description                                                                                                                                                      |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `01_Study_Coding.csv`      | Study-level coding data, including ROS version, assigned defect codes, quality-assessment fields, source-code requirements, simulation use, and tool support.    |
+| `02_Defect_Evidence.csv`   | Evidence supporting each study–defect association, including coverage labels, evidence statements, evidence locations, impact categories, provenance, and notes. |
+| `03_Codebook.csv`          | Definitions and operational criteria for the defect taxonomy and impact categories.                                                                              |
+| `04_Coding_Rules.csv`      | Rules for coding ROS version, defect categories, source-code requirements, simulation use, and tool support.                                                     |
+| `05_Coding_Audit.csv`      | Inter-rater audit records, including reviewer assignments, disagreements, and adjudicated labels.                                                                |
+| `06_Kappa_Calculation.csv` | Cohen's kappa calculations for the validation sample.                                                                                                            |
 
-| CSV file | Purpose |
-| --- | --- |
-| `data/csv/review_defect_statistics/00_review_question_summary.csv` | High-level summary of reviewer-facing questions, direct statistics, interpretations, and the detailed sheet supporting each answer. |
-| `data/csv/review_defect_statistics/00b_readme.csv` | Counting rules and basic metadata for the statistics workbook, including unit of analysis and tool-count definition. |
-| `data/csv/review_defect_statistics/01_defect_code_counts.csv` | Per-defect-code study counts, tool-supported counts, tool-support rates, and breakdowns by source-code requirement, simulation use, and ROS version. |
-| `data/csv/review_defect_statistics/02_subcategory_summary.csv` | Summary by major category and subcategory, including unique study counts, tool support, and study-defect instances. |
-| `data/csv/review_defect_statistics/03_major_summary.csv` | Summary by major category, mainly vulnerability (`VUL`) versus reliability (`REL`) defects. |
-| `data/csv/review_defect_statistics/04_tool_environment_summary.csv` | Counts by ROS version, source-code requirement, and simulation use across all studies, tool-supported studies, and non-tool studies. |
-| `data/csv/review_defect_statistics/05_tool_ros_by_source.csv` | Cross-tabulation of tool-supported studies by ROS version and source-code requirement. |
-| `data/csv/review_defect_statistics/06_tool_ros_by_simulation.csv` | Cross-tabulation of tool-supported studies by ROS version and simulation-use category. |
-| `data/csv/review_defect_statistics/07_tool_source_by_sim.csv` | Cross-tabulation of tool-supported studies by source-code requirement and simulation-use category. |
-| `data/csv/review_defect_statistics/08_simulation_only_tools.csv` | Tool-supported studies whose evaluation is coded as simulation-only. |
-| `data/csv/review_defect_statistics/08b_hybrid_tools.csv` | Tool-supported studies whose evaluation combines simulation and non-simulation evidence. |
-| `data/csv/review_defect_statistics/09_source_required_tools.csv` | Tool-supported studies whose method requires source code. |
-| `data/csv/review_defect_statistics/09b_source_mixed_tools.csv` | Tool-supported studies with mixed source-code requirements. |
-| `data/csv/review_defect_statistics/10_ros2_only_tools.csv` | Tool-supported studies coded as supporting ROS 2 but not ROS 1. |
-| `data/csv/review_defect_statistics/11_low_tool_support_defects.csv` | Defect codes with absent or weak tool support. |
-| `data/csv/review_defect_statistics/12_defect_tool_by_source.csv` | Per-defect-code cross-tabulation of tool-supported studies by source-code requirement. |
-| `data/csv/review_defect_statistics/13_defect_tool_by_sim.csv` | Per-defect-code cross-tabulation of tool-supported studies by simulation-use category. |
-| `data/csv/review_defect_statistics/14_defect_tool_by_ros.csv` | Per-defect-code cross-tabulation of tool-supported studies by ROS version. |
-| `data/csv/review_defect_statistics/15_expanded_study_defect.csv` | Long-format table with one row per study-defect-code instance, used to trace aggregate counts back to individual study rows. |
+The corresponding Excel workbook is available at:
 
-## CSV Files Exported From `study_coding_workbook.xlsx`
+```text
+data/excel/study_coding_workbook.xlsx
+```
 
-| CSV file | Purpose |
-| --- | --- |
-| `data/csv/study_coding_workbook/01_Study_Coding.csv` | Main study-level coding table; one row corresponds to one included study and records ROS version, final defect codes, QA fields, source-code requirement, simulation use, and tool flag. |
-| `data/csv/study_coding_workbook/02_Defect_Evidence.csv` | Defect-level evidence table linking studies to defect codes, coverage labels, evidence statements, evidence locations, impact categories, provenance, and notes. |
-| `data/csv/study_coding_workbook/03_Codebook.csv` | Defect taxonomy and impact-code codebook, including category definitions, operational meanings, inclusion rules, exclusion rules, and typical evidence. |
-| `data/csv/study_coding_workbook/04_Coding_Rules.csv` | Operational coding rules used to assign ROS version, defect category, defect code, source-code requirement, simulation use, and tool support. |
-| `data/csv/study_coding_workbook/05_Coding_Audit.csv` | Inter-rater coding audit table showing reviewer codes, agreements/disagreements, and final adjudicated labels. |
-| `data/csv/study_coding_workbook/06_Kappa_Calculation.csv` | Cohen's kappa calculation sheet for the validation sample, including agreement counts, observed agreement, expected agreement, and kappa values. |
+## Statistical Results
 
-## Reproduce the CSV Files
+The files in `data/csv/review_defect_statistics/` provide the aggregated statistics reported in the article.
 
-Install `openpyxl` if needed:
+| File                              | Description                                                                                                                                       |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `00_review_question_summary.csv`  | Summary of the main quantitative findings and the supporting statistical tables.                                                                  |
+| `00b_readme.csv`                  | Counting rules, units of analysis, and definitions used in the statistical calculations.                                                          |
+| `01_defect_code_counts.csv`       | Study counts, tool-supported counts, tool-support rates, source-code requirements, simulation use, and ROS-version coverage for each defect code. |
+| `02_subcategory_summary.csv`      | Aggregated results by defect subcategory.                                                                                                         |
+| `03_major_summary.csv`            | Aggregated results for vulnerability and reliability defects.                                                                                     |
+| `04_tool_environment_summary.csv` | Summary of ROS version, source-code requirements, and simulation use across study groups.                                                         |
+| `05_tool_ros_by_source.csv`       | Tool-supported studies by ROS version and source-code requirement.                                                                                |
+| `06_tool_ros_by_simulation.csv`   | Tool-supported studies by ROS version and simulation-use category.                                                                                |
+| `07_tool_source_by_sim.csv`       | Tool-supported studies by source-code requirement and simulation-use category.                                                                    |
+| `08_simulation_only_tools.csv`    | Tool-supported studies evaluated only in simulation.                                                                                              |
+| `08b_hybrid_tools.csv`            | Tool-supported studies evaluated using both simulation and non-simulation settings.                                                               |
+| `09_source_required_tools.csv`    | Tool-supported studies requiring source-code access.                                                                                              |
+| `09b_source_mixed_tools.csv`      | Tool-supported studies with mixed source-code requirements.                                                                                       |
+| `10_ros2_only_tools.csv`          | Tool-supported studies applicable to ROS 2 but not ROS 1.                                                                                         |
+| `11_low_tool_support_defects.csv` | Defect categories with absent or limited tool support.                                                                                            |
+| `12_defect_tool_by_source.csv`    | Tool-supported studies by defect code and source-code requirement.                                                                                |
+| `13_defect_tool_by_sim.csv`       | Tool-supported studies by defect code and simulation-use category.                                                                                |
+| `14_defect_tool_by_ros.csv`       | Tool-supported studies by defect code and ROS version.                                                                                            |
+| `15_expanded_study_defect.csv`    | Long-format data with one row for each study–defect association.                                                                                  |
+
+The corresponding Excel workbook is available at:
+
+```text
+data/excel/review_defect_statistics.xlsx
+```
+
+## Regenerating the CSV Files
+
+Install the required dependency:
 
 ```bash
 python -m pip install openpyxl
 ```
 
-Then regenerate the CSV files:
+Run the export script from the repository root:
 
 ```bash
 python scripts/export_excel_to_csv.py
 ```
 
-The CSV files are written as **UTF-8 with BOM** (`utf-8-sig`) so that Chinese text, en dashes, and the kappa symbol (`κ`) display correctly when opened in Microsoft Excel on Windows.
-
-## Data Handling
-
-The CSV files are direct worksheet exports from the two Excel workbooks. No values are manually retyped or edited during export. If either Excel workbook is updated, rerun `scripts/export_excel_to_csv.py` and commit the regenerated CSV files.
+The script regenerates the CSV files from the Excel workbooks without modifying the underlying worksheet values.
