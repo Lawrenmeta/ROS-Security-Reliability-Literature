@@ -1,0 +1,15 @@
+﻿row_id,title,ros_version,source_code_required,simulation_use,all_defect_codes,major_category_final
+60,ROZZ: Property-based Fuzzing for Robotic Programs in ROS,Both,Yes,Yes,GPE,REL
+67,Checking consistency of robot software architectures in ROS,ROS 1,No,Yes,ICF,REL
+57,Detecting Data Injection Attacks in ROS Systems Using Machine Learning,ROS 1,No,Yes,ROS1-UTA; ROS1-LNA,VUL
+64,DiscoFuzzer: Discontinuity-based Vulnerability Detector for Robotic Systems,ROS 1,No,Yes,BSE; GPE,REL
+85,Formal Verification of ROS Based Systems Using a Linear Logic Theorem Prover,ROS 1,Mixed,Yes,ICF; BSE,REL
+66,Property-Based Testing for the Robot Operating System,ROS 1,Yes,Yes,ICF; BSE; GPE,REL
+91,ROSDiscover: Statically Detecting Run-Time Architecture Misconfigurations in Robotics Systems,ROS 1,Yes,Yes,ICF,REL
+52,ROSMonitoring: A Runtime Verification Framework for ROS,ROS 1,No,Yes,BSE,REL
+62,Toward the Trustworthiness of Industrial Robotics Using Differential Fuzz Testing,ROS 1,No,Yes,BSE,REL
+65,Enhancing ROS System Fuzzing through Callback Tracing,ROS 2,Yes,Yes,GPE; SEF,REL
+61,Multi-Dimensional and Message-Guided Fuzzing for Robotic Programs in Robot Operating System,ROS 2,No,Yes,GPE,REL
+46,SROS2: Usable Cyber Security Tools for ROS 2,ROS 2,No,Yes,ROS2-ICAPP,VUL
+55,Watch Your Callback: Offline Anomaly Detection Using Machine Learning in ROS 2,ROS 2,No,Yes,ROS2-UTFAN; SEF,VUL
+77,SA4U: Practical Static Analysis for Unit Type Error Detection,ROS 1,Yes,Yes,BSE,REL

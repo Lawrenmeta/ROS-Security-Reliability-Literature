@@ -1,0 +1,59 @@
+﻿ROS SLR Operational Coding Rules,,,,,
+"This manual is aligned with the current manuscript taxonomy: vulnerabilities are classified by ROS version and CIA; reliability faults are classified as CODE or SEM, with BDF, SEF, GPE, ICF, and BSE as the only reliability leaf codes.",,,,,
+,,,,,
+A. Core Coding Sequence,,,,,
+Step,Decision,Rule,Allowed Result,Do Not,Example
+1,Determine the ROS version,"Use only the actual study object, implementation, or evaluation. Background, related work, and future work do not count.",ROS 1 / ROS 2 / Both / Unclear,Code Both merely because ROS 2 is mentioned.,Experiments on ROS Indigo → ROS 1.
+2,Determine the major category,"Malicious exploitation, unauthorized behavior, or a missing security policy → VUL; non-malicious internal fault → REL.",VUL / REL / BOTH,Automatically code BOTH because an attack causes a crash.,Attack-induced node crash → VUL + IMP-OA.
+3,Determine the subcategory,"For VUL, select C, I, or A. For REL, select CODE or SEM.",C / I / A / CODE / SEM,Infer the subcategory from the final impact.,Incorrect topic name → SEM.
+4,Select the leaf code,"Code the earliest, most specific, evidence-supported primary root-cause locus.",One of the 19 defect codes,Assign multiple reliability codes to the same fault instance based on its symptoms.,"Queue overflow → SEF, not ICF."
+5,Handle multiple defects,"A study may receive multiple codes, but each code must correspond to a distinct fault instance or fault family and have separate evidence.",Primary code + other code(s),Add unevaluated codes merely because a tool claims broad support.,Topic mismatch = ICF; unit mismatch = BSE.
+6,Record the impact,The defect code describes the root cause; Impact describes the system consequence. Keep them separate.,IMP-DS / IMP-DT / IMP-RE / IMP-FA / IMP-OA,"Use crash, delay, or wrong motion as a defect code.",Null dereference = GPE; crash = IMP-OA.
+7,Record evidence,State both the evidence and its location. Full or Partial cannot be based only on a broad summary statement.,Section / Page / Table / Figure / Repository,Write only “the paper discusses this issue.”,"Sec. 4.2, Fig. 3, p. 7."
+,,,,,
+B. Defect Coverage: Full / Partial / No,,,,,
+Judgment,Operational Meaning,Required Evidence,Not Sufficient,Long-Form Use,Score
+Full,"The defect category is a direct object of the study, method, or evaluation.","An explicit fault instance, data label, experimental case, or primary empirical analysis.",Mention only in background; an unsupported claim that the tool can address it.,Create an evidence row in 02_Defect_Evidence.,1
+Partial,"The category is explicitly addressed but not directly evaluated, or appears only as a secondary mechanism or capability statement.","Explicit textual discussion, secondary analysis, or a clearly stated but unevaluated capability boundary.","Inference only from a downstream symptom, without root-cause evidence.","An evidence row may be created, but the limitation must be stated.",0.5
+No,There is insufficient evidence for the category.,"No direct instance, analysis, or explicit capability statement.",Do not infer from topical similarity.,Normally omitted from the long-form sheet; omission means No.,0
+,,,,,
+"C. Study Quality Assessment (Full = 1, Partial = 0.5, No = 0)",,,,,
+Criterion,Full,Partial,No,Evidence to Record,Note
+QA1 ROS Relevance,"ROS is the research object, and the defect or method directly targets ROS mechanisms or a ROS-based system.","ROS is a necessary experimental platform, but the research object is not fully ROS-specific.",ROS is only an implementation tool or incidental background.,"Research question, target system, and experimental platform.",Do not assign Full merely because ROS is used.
+QA2 Defect Clarity,"The defect, root cause, trigger conditions, and boundary are clearly defined.","Only a broad category or symptom is given, while the root cause is partially clear.",It is not possible to determine which defect the study actually examines.,"Definition, fault instance, and attack/fault model.","Judge by root cause, not by impact."
+QA3 Study/Method Clarity,"Inputs, process, outputs, and key steps are sufficiently clear to understand or reproduce the work.","The overall process is clear, but key implementation details or parameters are missing.",The method or empirical procedure is inadequately described.,"Algorithm, workflow diagram, configuration, and parameters.","For empirical studies, assess the reported research procedure."
+QA4 Evaluation Strength,"System or data, baselines, metrics, settings, and results are clearly reported and cover the main claims.","The evaluation has limited cases, incomplete baselines or metrics, or small scale.","There is no substantive evaluation, or only a conceptual example is provided.","Dataset, subjects, metrics, repetitions, and results.",Do not judge quality by whether the result is statistically significant.
+QA5 Reproducibility,"Code, data, and configuration are public, or the reported details are sufficient for independent reproduction.","Only part of the artifacts is public, or key details remain missing.",No artifacts are available and the description is insufficient for reproduction.,"Repository, data, versions, parameters, and reproduction steps.",Assess availability as of the paper's publication.
+,,,,,
+D. Tool and Evaluation-Environment Flags,,,,,
+Field,Value,Definition,Boundary,Example,Use in 01_Study_Coding
+Source Code Required,Yes,"The method requires the target node/package source code as input, or requires source-level analysis, transformation, or instrumentation.","Requiring only package.xml, launch files, or configuration files does not automatically count as source-code dependence.",Static source-code analyzer.,Yes
+Source Code Required,No,"The method can operate using binaries, network traffic, rosbag data, runtime messages/graphs, logs, or deployment configuration only.",Use Mixed when both source-dependent and source-independent modes are present.,Network IDS or runtime monitor.,No
+Source Code Required,Mixed,"The same method includes both source-dependent and source-independent paths, or evaluates the two modes separately.",Do not code Mixed merely because the paper publishes its own source code.,Combined static and dynamic framework.,Mixed
+Source Code Required,N/A,"The study provides no executable detection/mitigation tool, or the field is not applicable.",Do not force an empirical study or survey into Yes or No.,Pure empirical defect study.,N/A
+Simulation Use,Yes,"Runtime evaluation is performed only in a simulator, emulated system, or synthetic ROS environment.",Use N/A for static analysis or formal verification with no runtime environment.,Gazebo-only or Stage-only evaluation.,Yes
+Simulation Use,No,"Runtime evaluation does not use a simulator or emulated system; this may include a physical robot, real hardware, deployed system, or standalone ROS testbed.","The criterion is whether simulation/emulation is used, not whether a physical robot is necessarily present.",Physical TurtleBot or laboratory ROS network testbed.,No
+Simulation Use,Hybrid,The evaluation includes both simulation and a physical robot or real deployment.,"Using multiple simulators is still Yes, not Hybrid.",Gazebo plus a physical robot.,Hybrid
+Simulation Use,N/A,"There is no runtime experiment, such as in static analysis, formal proof, secondary research, or pure data analysis.",Use Unclear when execution experiments exist but the paper does not state whether simulation was used.,Model checking without system execution.,N/A
+,,,,,
+E. Common Boundary Cases,,,,,
+Scenario,Correct Code,Do Not Also Code,Impact,Reason,Evidence
+"A node subscribes to the wrong topic name, so the robot does not move.",ICF,BSE,IMP-FA,The primary root cause is interface wiring; immobility is only the consequence.,Evidence of the incorrect topic/remap and the missing message flow.
+"The message arrives correctly, but degrees are interpreted as radians.",BSE,ICF,IMP-FA,The interface works; the defect lies in physical semantics.,"Expected unit, actual unit, and the resulting incorrect value or behavior."
+A long-running callback causes queue overflow and message loss.,SEF,ICF,IMP-FA or IMP-OA,"The root cause is the execution/queue mechanism, not the interface contract.","Callback duration, queue state, and timing traces."
+ROS 2 endpoints cannot communicate because their QoS settings are incompatible.,ICF,SEF,IMP-FA,Compatibility or configuration prevents interaction.,QoS profiles of both endpoints and incompatibility logs.
+A missing runtime dependency in package.xml causes deployment failure.,BDF,GPE,IMP-OA,The root cause lies in dependency metadata.,Manifest contents and build/deployment error.
+A shared variable lacks locking and causes a data race.,GPE,SEF,IMP-FA or IMP-OA,This is a generic synchronization defect; use SEF only when callback-group or executor configuration is the cause.,"Source code, locking behavior, and sanitizer or trace evidence."
+An attacker changes control gains through an unprotected parameter interface.,ROS1-IPS,BSE,IMP-DT / IMP-FA,The primary mechanism is unauthorized modification; add BSE only if the paper separately analyzes a benign misconfiguration of the same parameter.,"Attack model, parameter write, and resulting behavioral change."
+An attack causes a node crash.,Relevant VUL code,Do not automatically add REL or BOTH,IMP-OA,The crash is an impact. Code BOTH only when an independent internal reliability fault is also analyzed.,"Exploit chain, vulnerability mechanism, and crash evidence."
+,,,,,
+F. Evidence Provenance (External Evidence vs. Author-Created Cases),,,,,
+Code,Meaning,Direct Category Evidence,Independent Grounding,Use,Example
+EP-HIST,"Historical issue, commit, or vulnerability record",Yes,Yes,External evidence of a real defect.,Existing ROS issue or fixing commit.
+EP-OBS,Defect observed in the study,Yes,Usually,Empirical finding; state whether it was discovered and evaluated in the same paper.,Defect found in a repository or execution log.
+EP-PUB,External public benchmark or dataset,Yes,Yes,External evaluation evidence.,Third-party dataset.
+EP-SEED,Author-injected or synthetic defect,Yes for coverage,No,"Shows that the method handles a constructed case, but not that the defect is prevalent.",Mutation or seeded bug.
+EP-PROP,Author-defined property and its violation,Yes for coverage,No,"Validates a formal target, but does not establish external defect prevalence.",Author-defined safety invariant.
+EP-CLAIM,Capability claim without an instance or evaluation,Partial only,No,Cannot be coded Full.,“The method can detect semantic errors.”
+EP-REPL,Independent replication or validation by another team,Yes,Yes,One of the strongest forms of external maturity evidence.,Third-party use of an existing tool.
+UNCLEAR,Evidence provenance cannot be determined,Unclear,Unclear,Avoid strong conclusions.,The source of the case is not reported.

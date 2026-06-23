@@ -1,0 +1,6 @@
+﻿major_category,subcategory,distinct_defect_codes,study_count_unique_within_category,tool_supported_study_count,tool_support_rate_percent,code_study_instances,simulation_only_tool_studies,source_required_tool_studies
+VUL,I,5,54,26,48.1,103,2,8
+VUL,C,5,45,17,37.8,70,0,7
+VUL,A,4,33,8,24.2,43,1,2
+REL,SEM,2,24,23,95.8,30,8,13
+REL,CODE,3,18,17,94.4,19,6,8

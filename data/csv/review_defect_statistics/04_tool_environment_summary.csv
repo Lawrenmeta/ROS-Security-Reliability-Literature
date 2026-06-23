@@ -1,0 +1,11 @@
+﻿dimension,value,all_studies,tool_studies,non_tool_studies
+ROS Version,ROS 1,58,42,16
+ROS Version,ROS 2,20,16,4
+ROS Version,Both,12,3,9
+ROS Version,Unclear,1,1,0
+Source Code Required,Yes,32,29,3
+Source Code Required,Mixed,1,1,0
+Source Code Required,No,58,32,26
+Simulation Use,Yes,25,14,11
+Simulation Use,Hybrid,7,6,1
+Simulation Use,No,59,42,17

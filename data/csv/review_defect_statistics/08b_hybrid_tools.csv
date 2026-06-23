@@ -1,0 +1,7 @@
+﻿row_id,title,ros_version,source_code_required,simulation_use,all_defect_codes,major_category_final
+45,TROS: Protecting Humanoids’ ROS from Privileged Attackers,Both,Yes,Hybrid,ROS1-LE; ROS1-LNA; ROS1-UTA; ROS2-ICAPP,VUL
+53,ROS-Defender: SDN-Based Security Policy Enforcement for Robotic Applications,ROS 1,No,Hybrid,ROS1-UTA; ROS1-LFQ; ROS1-LNA; ROS1-LE,VUL
+43,Runtime Verification on Hierarchical Properties of ROS-Based Robot Swarms,ROS 1,No,Hybrid,BSE; ROS1-UTA,REL
+63,RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS) for Finding Correctness Bugs,ROS 2,No,Hybrid,BSE; GPE; ICF,REL
+54,Towards a Robotic Intrusion Prevention System: Combining Security and Safety in Cognitive Social Robots,ROS 2,No,Hybrid,ROS2-MPIB; ROS2-UTFAN,VUL
+78,UPPAAL-Based Modeling and Verification of ROS 2 Multi-threaded Execution and Operating System Reservations,ROS 2,No,Hybrid,SEF,REL

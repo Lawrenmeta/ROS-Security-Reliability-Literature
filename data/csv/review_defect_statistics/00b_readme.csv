@@ -1,0 +1,8 @@
+﻿item,value
+Unit of analysis,One study row from 01_Study_Coding.
+Defect source,ALL Defect Code in 01_Study_Coding; semicolon-split multi-label field.
+Excluded source,02_Defect_Evidence Coverage / Full / Partial labels are not used.
+Tool count definition,"Count of study rows with Tools=Yes, not distinct named tools."
+Simulation-only definition,Simulation Use=Yes; Hybrid is counted separately.
+Total studies,91
+Tool-supported studies,62

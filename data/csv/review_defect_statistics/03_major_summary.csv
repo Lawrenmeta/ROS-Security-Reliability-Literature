@@ -1,0 +1,3 @@
+﻿major_category,distinct_defect_codes,study_count_unique_within_major,tool_supported_study_count,tool_support_rate_percent,code_study_instances
+VUL,14,59,31,52.5,216
+REL,5,35,34,97.1,49

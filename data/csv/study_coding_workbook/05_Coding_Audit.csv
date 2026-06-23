@@ -1,0 +1,99 @@
+﻿Inter-rater Coding Audit / 双人编码分析记录,,,,,,,,,,
+The final code was produced only after comparing both independent codes and re-checking the full-text evidence and coding rules.,,,,,,,,,,
+,,,,,,,,,,
+Full coding audit: 91 studies,,,κ sample: source rows 60–86 (N=27),,,Sample major disagreements: 0,,Sample primary disagreements: 3,,
+,,,,,,,,,,
+"Primary Subcategory is a multi-label field. Each label set is canonicalized in the order C; I; A; CODE; SEM, and exact-set agreement is used. Cohen's kappa is estimated only on the randomly selected validation sample (source rows 60–86, N=27).",,,,,,,,,,
+,,,,,,,,,,
+No.,Source Row,Article Title / 文章标题,Major R1,Major R2,Major Agreement,Final Major,Primary R1 (normalized),Primary R2 (normalized),Primary Agreement,Final Primary (normalized)
+1,4,"A systematic review on cybersecurity of robotic systems: vulnerabilities trends, threats, attacks, challenges, and proposed framework",VUL,VUL,Agree,VUL,C; I; A,C; I; A,Agree,C; I; A
+2,5,Cyber security of robots: A comprehensive survey,VUL,VUL,Agree,VUL,C; I,C; I,Agree,C; I
+3,6,"Robotics Cyber Security: Vulnerabilities, Attacks, Countermeasures, and Recommendations",VUL,VUL,Agree,VUL,I,C,Disagree,C; I
+4,7,An Empirical Study of Vulnerabilities in Robotics,VUL,VUL,Agree,VUL,—,—,Agree,—
+5,8,Security in Robot Operating Systems (ROS): Analytical Review Study,VUL,VUL,Agree,VUL,C; I; A,C; I; A,Agree,C; I; A
+6,9,Who Controls Your Robot? An Evaluation of ROS Security Mechanisms,VUL,VUL,Agree,VUL,C; I,C; I,Agree,C; I
+7,10,Robot Operating System 2: The Need for a Holistic Security Approach to Robotic Architectures,VUL,VUL,Agree,VUL,C; I; A,C; I; A,Agree,C; I; A
+8,11,Understanding Misconfigurations in ROS: An Empirical Study and Current Approaches,REL,REL,Agree,REL,CODE; SEM,CODE; SEM,Agree,CODE; SEM
+9,12,The Role of Security in Human-Robot Shared Environments: A Case Study in ROS-based Surveillance Robots,VUL,VUL,Agree,VUL,C; I; A,C; I; A,Agree,C; I; A
+10,13,A Study on ROS Vulnerabilities and Countermeasure,VUL,VUL,Agree,VUL,C,I,Disagree,C; I
+11,14,Smart Malware that Uses Leaked Control Data of Robotic Applications: The Case of Raven-II Surgical Robots,VUL,VUL,Agree,VUL,C; I,C; I,Agree,C; I
+12,15,ROSploit: Cybersecurity Tool for ROS,VUL,VUL,Agree,VUL,C; I,C; I,Agree,C; I
+13,16,Scanning the Internet for ROS: A View of Security in Robotics Research,VUL,VUL,Agree,VUL,C; I,C; I,Agree,C; I
+14,17,Security on ROS: Analyzing and Exploiting Vulnerabilities of ROS-Based Systems,VUL,VUL,Agree,VUL,C; I,C; I,Agree,C; I
+15,18,Security Controller Synthesis for ROS-based Robot,VUL,VUL,Agree,VUL,I; A,I; A,Agree,I; A
+16,19,Penetration Testing ROS,VUL,VUL,Agree,VUL,C; I,C; I,Agree,C; I
+17,20,Novel Denial-of-Service Attacks Against Cloud-Based Multi-Robot Systems,VUL,VUL,Agree,VUL,A,A,Agree,A
+18,21,Data Tampering Attack Design for ROS-Based Object Detection and Tracking Robotic Platform,VUL,VUL,Agree,VUL,C; I,C; I,Agree,C; I
+19,22,Analysis of Attacks on Robotic Operation System,VUL,VUL,Agree,VUL,C,I,Disagree,C; I
+20,23,Cyberattacks on Self-Driving Cars and Surgical and Eldercare Robots,BOTH,VUL,Disagree,VUL,C; A,I; A; CODE,Disagree,C; I; A; CODE
+21,24,ROS Network Security for a Swing Doors Automation in a Robotized Hospital,VUL,VUL,Agree,VUL,C; I,C; I,Agree,C; I
+22,25,An Analysis of DoS Attack on Robot Operating System,VUL,VUL,Agree,VUL,I; A,I; A,Agree,I; A
+23,26,Understanding the Internet-Wide Vulnerability Landscape for ROS-based Robotic Vehicles,VUL,VUL,Agree,VUL,C; I,C; I,Agree,C; I
+24,27,Analyzing Impact and Systemwide Effects of the SlowROS Attack in an Industrial Automation Scenario,VUL,VUL,Agree,VUL,A,A,Agree,A
+25,28,Network Reconnaissance and Vulnerability Excavation of Secure DDS Systems,VUL,VUL,Agree,VUL,C,C,Agree,C
+26,29,AVGuardian: Detecting and Mitigating Publish-Subscribe Overprivilege for Autonomous Vehicle Systems,VUL,VUL,Agree,VUL,I,I,Agree,I
+27,30,Analyzing Security Vulnerability and Forensic Investigation of ROS2: A Case Study,VUL,VUL,Agree,VUL,A,A,Agree,A
+28,31,Investigating Security Threats in Multi-Tenant ROS 2 Systems,VUL,VUL,Agree,VUL,C; I,C; I,Agree,C; I
+29,32,Cybersecurity in Autonomous Systems: Evaluating the Performance of Hardening ROS,VUL,VUL,Agree,VUL,C; I,C; I,Agree,C; I
+30,33,Cybersecurity in Autonomous Systems: Hardening ROS Using Encrypted Communications and Semantic Rules,VUL,VUL,Agree,VUL,C; I,C; I,Agree,C; I
+31,34,Increasing ROS 1.x Communication Security for Medical Surgery Robot,VUL,VUL,Agree,VUL,I,I,Agree,I
+32,35,Application-level Security for ROS-based Applications,VUL,VUL,Agree,VUL,C; I,C; I,Agree,C; I
+33,36,Security for the Robot Operating System,VUL,VUL,Agree,VUL,C; I; A,C; I; A,Agree,C; I; A
+34,37,Policy-based Access Control for Robotic Applications,VUL,VUL,Agree,VUL,I,I,Agree,I
+35,38,Cross-Layer Secure and Resilient Control of Delay-Sensitive Networked Robot Operating Systems,VUL,VUL,Agree,VUL,I,I,Agree,I
+36,39,Designing a Security Platform for Collaborating Autonomous Systems – An Experience Report,VUL,VUL,Agree,VUL,C; I,C; I,Agree,C; I
+37,40,Message Authentication Codes for Secure Remote Non-Native Client Connections to ROS Enabled Robots,VUL,VUL,Agree,VUL,C; I,C; I,Agree,C; I
+38,41,A Cryptography-Powered Infrastructure to Ensure the Integrity of Robot Workflows,VUL,VUL,Agree,VUL,SEM,SEM,Agree,SEM
+39,42,AuthROS: Secure Data Sharing Among Robot Operating Systems Based on Ethereum,VUL,VUL,Agree,VUL,C; I,C; I,Agree,C; I
+40,43,Proposed Technique for Data Security with the AES Algorithm in Robot Operating System (ROS),VUL,VUL,Agree,VUL,C,C,Agree,C
+41,44,Procedurally Provisioned Access Control for Robotic Systems,VUL,VUL,Agree,VUL,C,C,Agree,C
+42,45,Enhancing Security in ROS,VUL,VUL,Agree,VUL,C; I,C; I,Agree,C; I
+43,46,Runtime Verification on Hierarchical Properties of ROS-Based Robot Swarms,VUL,REL,Disagree,REL,I,I,Agree,I
+44,47,CryptoROS: A Secure Communication Architecture for ROS-Based Applications,VUL,VUL,Agree,VUL,C; I; A,C; I; A,Agree,C; I; A
+45,48,TROS: Protecting Humanoids’ ROS from Privileged Attackers,VUL,VUL,Agree,VUL,C,I,Disagree,C; I
+46,49,SROS2: Usable Cyber Security Tools for ROS 2,VUL,VUL,Agree,VUL,I,I,Agree,I
+47,50,ROSEC: Intra-Process Isolation for ROS Composition With Memory Protection Keys,VUL,VUL,Agree,VUL,A,A,Agree,A
+48,51,Support Remote Attestation for Decentralized Robot Operating System (ROS) Using Trusted Execution Environment,VUL,VUL,Agree,VUL,I,I,Agree,I
+49,52,Quantifying DDS-Cerberus Network Control Overhead,VUL,VUL,Agree,VUL,I,I,Agree,I
+50,53,Decentralized Information-Flow Control for ROS2,VUL,VUL,Agree,VUL,C,C,Agree,C
+51,54,ROSRV: Runtime Verification for Robots,VUL,REL,Disagree,VUL,SEM,I,Disagree,I; SEM
+52,55,ROSMonitoring: A Runtime Verification Framework for ROS,REL,REL,Agree,REL,SEM,SEM,Agree,SEM
+53,56,ROS-Defender: SDN-Based Security Policy Enforcement for Robotic Applications,VUL,VUL,Agree,VUL,C; I; A,C; I; A,Agree,C; I; A
+54,57,Towards a Robotic Intrusion Prevention System: Combining Security and Safety in Cognitive Social Robots,VUL,VUL,Agree,VUL,I; A,I; A,Agree,I; A
+55,58,Watch Your Callback: Offline Anomaly Detection Using Machine Learning in ROS 2,REL,VUL,Disagree,VUL,A; CODE,CODE,Disagree,A; CODE
+56,59,Intrusion Detection on Robot Cameras Using Spatio-Temporal Autoencoders: A Self-Driving Car Application,VUL,VUL,Agree,VUL,C; A,I; A,Disagree,C; I; A
+57,60,Detecting Data Injection Attacks in ROS Systems Using Machine Learning,VUL,VUL,Agree,VUL,I,I,Agree,I
+58,61,Trusted Operations of a Military Ground Robot in the Face of Man-in-the-Middle Cyberattacks Using Deep Learning Convolutional Neural Networks: Real-Time Experimental Outcomes,VUL,VUL,Agree,VUL,I,C,Disagree,C; I
+59,62,DCWM-LSTM: A Novel Attack Detection Framework for Robotic Arms,VUL,VUL,Agree,VUL,I; A,I; A,Agree,I; A
+60,63,ROZZ: Property-based Fuzzing for Robotic Programs in ROS,REL,REL,Agree,REL,CODE,CODE,Agree,CODE
+61,64,Multi-Dimensional and Message-Guided Fuzzing for Robotic Programs in Robot Operating System,REL,REL,Agree,REL,CODE,CODE,Agree,CODE
+62,65,Toward the Trustworthiness of Industrial Robotics Using Differential Fuzz Testing,REL,REL,Agree,REL,SEM,SEM,Agree,SEM
+63,66,RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS) for Finding Correctness Bugs,REL,REL,Agree,REL,CODE; SEM,CODE; SEM,Agree,CODE; SEM
+64,67,DiscoFuzzer: Discontinuity-based Vulnerability Detector for Robotic Systems,REL,REL,Agree,REL,CODE; SEM,CODE; SEM,Agree,CODE; SEM
+65,68,Enhancing ROS System Fuzzing through Callback Tracing,REL,REL,Agree,REL,CODE,CODE,Agree,CODE
+66,69,Property-Based Testing for the Robot Operating System,REL,REL,Agree,REL,SEM,CODE,Disagree,CODE; SEM
+67,70,Checking consistency of robot software architectures in ROS,REL,REL,Agree,REL,SEM,SEM,Agree,SEM
+68,71,Static-time Extraction and Analysis of the ROS Computation Graph,REL,REL,Agree,REL,CODE,CODE; SEM,Disagree,CODE; SEM
+69,72,Verification of System-Wide Safety Properties of ROS Applications,REL,REL,Agree,REL,SEM,SEM,Agree,SEM
+70,73,A Framework for Quality Assessment of ROS Repositories,REL,REL,Agree,REL,CODE,CODE,Agree,CODE
+71,74,ROSInfer: Statically Inferring Behavioral Component Models for ROS-based Robotics Systems,REL,REL,Agree,REL,SEM,SEM,Agree,SEM
+72,75,Towards Automatic Inference of Behavioral Component Models for ROS-Based Robotics Systems,REL,REL,Agree,REL,SEM,SEM,Agree,SEM
+73,76,Lightweight Detection of Physical Unit Inconsistencies without Program Annotations,REL,REL,Agree,REL,SEM,SEM,Agree,SEM
+74,77,"Phriky-Units: A Lightweight, Annotation-Free Physical Unit Inconsistency Detection Tool",REL,REL,Agree,REL,SEM,SEM,Agree,SEM
+75,78,Phys: Probabilistic Physical Unit Assignment and Inconsistency Detection,REL,REL,Agree,REL,SEM,SEM,Agree,SEM
+76,79,PhysFrame: Type Checking Physical Frames of Reference for Robotic Systems,REL,REL,Agree,REL,SEM,SEM,Agree,SEM
+77,80,SA4U: Practical Static Analysis for Unit Type Error Detection,REL,REL,Agree,REL,SEM,SEM,Agree,SEM
+78,81,UPPAAL-Based Modeling and Verification of ROS 2 Multi-threaded Execution and Operating System Reservations,REL,REL,Agree,REL,CODE,CODE,Agree,CODE
+79,82,A Model-Based Methodology for Automated Verification of ROS 2 Systems,REL,REL,Agree,REL,CODE,CODE,Agree,CODE
+80,83,Formal Verification of ROS-based Robotic Applications using Timed-Automata,REL,REL,Agree,REL,CODE,CODE,Agree,CODE
+81,84,Pattern-based verification of ROS 2 applications using UPPAAL,REL,REL,Agree,REL,CODE,CODE,Agree,CODE
+82,85,Verifying ROS-Based Applications Using Timed and Stochastic Timed Automata,REL,REL,Agree,REL,CODE,CODE,Agree,CODE
+83,86,DiNeROS: A Model-Driven Framework for Verifiable ROS Applications with Petri Nets,REL,REL,Agree,REL,CODE; SEM,CODE; SEM,Agree,CODE; SEM
+84,87,Distributed Petri Nets for Model-Driven Verifiable Robotic Applications in ROS,REL,REL,Agree,REL,SEM,SEM,Agree,SEM
+85,88,Formal Verification of ROS Based Systems Using a Linear Logic Theorem Prover,REL,REL,Agree,REL,SEM,SEM,Agree,SEM
+86,89,Formal Analysis and Detection for ROS2 Communication Security Vulnerability,VUL,VUL,Agree,VUL,I,I,Agree,I
+87,90,ROSCallBaX: Statically Detecting Inconsistencies in Callback Function Setup of Robotic Systems,REL,REL,Agree,REL,CODE,CODE,Agree,CODE
+88,91,A Novel Solution for Securing Robot Communications Based on the MQTT Protocol and ROS,VUL,VUL,Agree,VUL,C; I,C; I,Agree,C; I
+89,92,From Models To Software Through Automatic Transformations: An AADL To ROS End-to-End Toolchain,REL,REL,Agree,REL,CODE; SEM,CODE; SEM,Agree,CODE; SEM
+90,93,On the (In)Security of Secure ROS2,VUL,VUL,Agree,VUL,C; I,I,Disagree,C; I
+91,94,ROSDiscover: Statically Detecting Run-Time Architecture Misconfigurations in Robotics Systems,REL,REL,Agree,REL,SEM,SEM,Agree,SEM

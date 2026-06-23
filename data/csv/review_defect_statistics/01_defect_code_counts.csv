@@ -1,0 +1,20 @@
+﻿defect_code,major_category,subcategory,ros_scope_in_codebook,concise_label,study_count,study_percent_of_91,tool_supported_study_count,tool_support_rate_percent,non_tool_study_count,tool_source_required_yes,tool_source_required_mixed,tool_source_required_no,tool_simulation_only_yes,tool_simulation_hybrid,tool_no_simulation,study_ros1_only,study_ros2_only,study_both_ros1_ros2,study_ros_unclear
+ROS1-UTA,VUL,I,ROS 1,Unrestricted Access,41,45.1,21,51.2,20,7,0,14,1,3,17,34,0,7,0
+ROS1-LNA,VUL,I,ROS 1,No Node Authentication,37,40.7,16,43.2,21,6,0,10,1,2,13,29,0,8,0
+ROS1-LE,VUL,C,ROS 1,No Encryption,34,37.4,15,44.1,19,6,0,9,0,2,13,26,0,8,0
+ROS1-PNE,VUL,C,ROS 1,Public Exposure,20,22,1,5,19,1,0,0,0,0,1,14,0,6,0
+BSE,REL,SEM,ROS 1 / ROS 2,Behavioral/Semantic,19,20.9,18,94.7,1,9,1,8,6,2,10,16,1,1,1
+ROS1-LFQ,VUL,A,ROS 1,No Flow/QoS Control,19,20.9,5,26.3,14,1,0,4,0,1,4,15,0,4,0
+ROS1-SPF,VUL,A,ROS 1,Master Single Point,13,14.3,0,0,13,0,0,0,0,0,0,10,0,3,0
+ICF,REL,SEM,ROS 1 / ROS 2,Interaction/Communication,11,12.1,10,90.9,1,6,1,3,4,1,5,9,1,1,0
+SEF,REL,CODE,ROS 1 / ROS 2,Scheduling/Execution,11,12.1,10,90.9,1,4,0,6,2,1,7,3,6,2,0
+ROS2-ICAPP,VUL,I,ROS 2,Weak Credential Protection,11,12.1,4,36.4,7,1,0,3,1,1,2,1,7,3,0
+ROS2-MPIB,VUL,I,ROS 2,No Publisher Binding,8,8.8,3,37.5,5,1,0,2,0,1,2,1,4,3,0
+ROS2-ILE,VUL,C,ROS 2,Leaky Encryption,8,8.8,0,0,8,0,0,0,0,0,0,1,4,3,0
+GPE,REL,CODE,ROS 1 / ROS 2,Programming Errors,7,7.7,7,100,0,4,0,3,5,1,1,3,3,1,0
+ROS2-LMLAC,VUL,C,ROS 2,No Message-Level Control,7,7.7,2,28.6,5,1,0,1,0,0,2,1,4,2,0
+ROS2-UTFAN,VUL,A,ROS 2,Unregulated Auth Traffic,7,7.7,2,28.6,5,0,0,2,1,1,0,1,4,2,0
+ROS1-IPS,VUL,I,ROS 1,Insecure Parameters,6,6.6,1,16.7,5,1,0,0,0,0,1,4,0,2,0
+ROS2-LRI,VUL,A,ROS 2,No Resource Isolation,4,4.4,1,25,3,1,0,0,0,0,1,0,3,1,0
+BDF,REL,CODE,ROS 1 / ROS 2,Build/Dependency Faults,1,1.1,1,100,0,1,0,0,0,0,1,1,0,0,0
+ROS2-CSCE,VUL,C,ROS 2,Crypto Supply Chain,1,1.1,0,0,1,0,0,0,0,0,0,0,1,0,0

@@ -1,0 +1,30 @@
+﻿row_id,title,ros_version,source_code_required,simulation_use,all_defect_codes,major_category_final
+87,ROSCallBaX: Statically Detecting Inconsistencies in Callback Function Setup of Robotic Systems,Both,Yes,No,SEF,REL
+60,ROZZ: Property-based Fuzzing for Robotic Programs in ROS,Both,Yes,Yes,GPE,REL
+45,TROS: Protecting Humanoids’ ROS from Privileged Attackers,Both,Yes,Hybrid,ROS1-LE; ROS1-LNA; ROS1-UTA; ROS2-ICAPP,VUL
+38,A Cryptography-Powered Infrastructure to Ensure the Integrity of Robot Workflows,ROS 1,Yes,No,BSE,VUL
+70,A Framework for Quality Assessment of ROS Repositories,ROS 1,Yes,No,GPE,REL
+32,Application-level Security for ROS-based Applications,ROS 1,Yes,No,ROS1-LNA; ROS1-UTA; ROS1-LE,VUL
+36,Designing a Security Platform for Collaborating Autonomous Systems – An Experience Report,ROS 1,Yes,No,ROS1-LNA; ROS1-UTA; ROS1-LE,VUL
+80,Formal Verification of ROS-based Robotic Applications using Timed-Automata,ROS 1,Yes,No,SEF,REL
+89,From Models To Software Through Automatic Transformations: An AADL To ROS End-to-End Toolchain,ROS 1,Yes,No,ICF; BDF,REL
+31,Increasing ROS 1.x Communication Security for Medical Surgery Robot,ROS 1,Yes,No,ROS1-LNA; ROS1-UTA,VUL
+73,Lightweight Detection of Physical Unit Inconsistencies without Program Annotations,ROS 1,Yes,No,BSE,REL
+37,Message Authentication Codes for Secure Remote Non-Native Client Connections to ROS Enabled Robots,ROS 1,Yes,No,ROS1-LNA; ROS1-LE; ROS1-PNE; ROS1-UTA,VUL
+74,"Phriky-Units: A Lightweight, Annotation-Free Physical Unit Inconsistency Detection Tool",ROS 1,Yes,No,BSE,REL
+75,Phys: Probabilistic Physical Unit Assignment and Inconsistency Detection,ROS 1,Yes,No,BSE,REL
+76,PhysFrame: Type Checking Physical Frames of Reference for Robotic Systems,ROS 1,Yes,No,BSE; ICF,REL
+34,Policy-based Access Control for Robotic Applications,ROS 1,Yes,No,ROS1-UTA,VUL
+66,Property-Based Testing for the Robot Operating System,ROS 1,Yes,Yes,ICF; BSE; GPE,REL
+40,Proposed Technique for Data Security with the AES Algorithm in Robot Operating System (ROS),ROS 1,Yes,No,ROS1-LE,VUL
+91,ROSDiscover: Statically Detecting Run-Time Architecture Misconfigurations in Robotics Systems,ROS 1,Yes,Yes,ICF,REL
+71,ROSInfer: Statically Inferring Behavioral Component Models for ROS-based Robotics Systems,ROS 1,Yes,No,ICF,REL
+33,Security for the Robot Operating System,ROS 1,Yes,No,ROS1-UTA; ROS1-LNA; ROS1-LE; ROS1-LFQ; ROS1-IPS,VUL
+68,Static-time Extraction and Analysis of the ROS Computation Graph,ROS 1,Yes,No,ICF; SEF,REL
+72,Towards Automatic Inference of Behavioral Component Models for ROS-Based Robotics Systems,ROS 1,Yes,No,BSE,REL
+69,Verification of System-Wide Safety Properties of ROS Applications,ROS 1,Yes,No,BSE,REL
+50,Decentralized Information-Flow Control for ROS2,ROS 2,Yes,No,ROS2-LMLAC,VUL
+65,Enhancing ROS System Fuzzing through Callback Tracing,ROS 2,Yes,Yes,GPE; SEF,REL
+49,Quantifying DDS-Cerberus Network Control Overhead,ROS 2,Yes,No,ROS2-MPIB,VUL
+47,ROSEC: Intra-Process Isolation for ROS Composition With Memory Protection Keys,ROS 2,Yes,No,ROS2-LRI,VUL
+77,SA4U: Practical Static Analysis for Unit Type Error Detection,Unclear,Yes,Yes,BSE,REL

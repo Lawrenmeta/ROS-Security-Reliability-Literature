@@ -1,0 +1,17 @@
+﻿row_id,title,ros_version,source_code_required,simulation_use,all_defect_codes,major_category_final
+79,A Model-Based Methodology for Automated Verification of ROS 2 Systems,ROS 2,No,No,SEF,REL
+50,Decentralized Information-Flow Control for ROS2,ROS 2,Yes,No,ROS2-LMLAC,VUL
+65,Enhancing ROS System Fuzzing through Callback Tracing,ROS 2,Yes,Yes,GPE; SEF,REL
+86,Formal Analysis and Detection for ROS2 Communication Security Vulnerability,ROS 2,No,No,ROS2-ICAPP; ROS2-MPIB,VUL
+61,Multi-Dimensional and Message-Guided Fuzzing for Robotic Programs in Robot Operating System,ROS 2,No,Yes,GPE,REL
+81,Pattern-based verification of ROS 2 applications using UPPAAL,ROS 2,No,No,SEF,REL
+41,Procedurally Provisioned Access Control for Robotic Systems,ROS 2,No,No,ROS2-LMLAC,VUL
+49,Quantifying DDS-Cerberus Network Control Overhead,ROS 2,Yes,No,ROS2-MPIB,VUL
+47,ROSEC: Intra-Process Isolation for ROS Composition With Memory Protection Keys,ROS 2,Yes,No,ROS2-LRI,VUL
+63,RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS) for Finding Correctness Bugs,ROS 2,No,Hybrid,BSE; GPE; ICF,REL
+46,SROS2: Usable Cyber Security Tools for ROS 2,ROS 2,No,Yes,ROS2-ICAPP,VUL
+48,Support Remote Attestation for Decentralized Robot Operating System (ROS) Using Trusted Execution Environment,ROS 2,No,No,ROS2-ICAPP,VUL
+54,Towards a Robotic Intrusion Prevention System: Combining Security and Safety in Cognitive Social Robots,ROS 2,No,Hybrid,ROS2-MPIB; ROS2-UTFAN,VUL
+78,UPPAAL-Based Modeling and Verification of ROS 2 Multi-threaded Execution and Operating System Reservations,ROS 2,No,Hybrid,SEF,REL
+82,Verifying ROS-Based Applications Using Timed and Stochastic Timed Automata,ROS 2,No,No,SEF,REL
+55,Watch Your Callback: Offline Anomaly Detection Using Machine Learning in ROS 2,ROS 2,No,Yes,ROS2-UTFAN; SEF,VUL
