@@ -23,7 +23,7 @@ scripts/
 | File | Purpose |
 | --- | --- |
 | `data/excel/review_defect_statistics.xlsx` | Statistics workbook summarizing defect counts, tool support, ROS-version coverage, source-code requirements, simulation use, and low-support defect categories. |
-| `data/excel/study_coding_workbook.xlsx` | Main study-coding workbook. This is a renamed copy of the original file `final(4)_ALL_defect_compatible_工具标记111.xlsx`; the file name was simplified for GitHub readability, but the workbook content is unchanged. |
+| `data/excel/study_coding_workbook.xlsx` | Main study-coding workbook.
 
 ## CSV Files Exported From `review_defect_statistics.xlsx`
 
